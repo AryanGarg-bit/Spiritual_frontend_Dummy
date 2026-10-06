@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Palette */
+  --maroon: #4A1420;
+  --maroon-dark: #320C14;
+  --maroon-light: #6A2131;
+  --saffron: #E8891D;
+  --saffron-hover: #D4770F;
+  --gold: #C9A24B;
+  --gold-light: #E0C075;
+  --gold-hairline: rgba(201, 162, 75, 0.35);
+  --ivory: #FBF6EC;
+  --ivory-surface: #FFFFFF;
+  --ivory-muted: #F3EBDD;
+  --charcoal: #1F1A17;
+  --charcoal-muted: #554D47;
+  --sage: #7C8B6A;
+  --sage-light: #EBF0E6;
+  --sage-dark: #586548;
+
+  /* Semantic Theme tokens (Light mode) */
+  --bg-primary: #FBF6EC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #F6EFE2;
+  --bg-header: rgba(251, 246, 236, 0.92);
+  --text-primary: #1F1A17;
+  --text-secondary: #554D47;
+  --text-muted: #7A7067;
+  --border-subtle: #E8DECD;
+  --border-gold: #C9A24B;
+  --accent-cta: #E8891D;
+  --accent-cta-text: #FFFFFF;
+  --card-shadow: 0 4px 20px -2px rgba(74, 20, 32, 0.06), 0 2px 6px -1px rgba(74, 20, 32, 0.04);
+  --card-shadow-hover: 0 12px 28px -4px rgba(74, 20, 32, 0.12), 0 4px 12px -2px rgba(74, 20, 32, 0.08);
+}
+
+[data-theme="dark"],
+.dark {
+  /* Semantic Theme tokens (Dark mode - Deep sacred temple dusk) */
+  --bg-primary: #160F12;
+  --bg-surface: #22171B;
+  --bg-surface-elevated: #2C1E23;
+  --bg-header: rgba(22, 15, 18, 0.92);
+  --text-primary: #FBF6EC;
+  --text-secondary: #D9CEBF;
+  --text-muted: #A89C8E;
+  --border-subtle: #38252B;
+  --border-gold: #DFB864;
+  --accent-cta: #E8891D;
+  --accent-cta-text: #FFFFFF;
+  --maroon: #852B3D;
+  --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+  --card-shadow-hover: 0 12px 28px -4px rgba(201, 162, 75, 0.15);
+}
+
+@layer base {
+  * {
+    border-color: var(--border-subtle);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light dark;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans), sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease;
+    overflow-x: hidden;
+  }
+}
+
+/* Typography Helpers */
+.font-serif-sacred {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: var(--font-sans), sans-serif;
+}
+
+.font-devanagari {
+  font-family: var(--font-devanagari), serif;
+}
+
+/* Sacred Texture and Patterns */
+.bg-mandala-pattern {
+  background-image: radial-gradient(var(--gold-hairline) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-sacred-gradient {
+  background: linear-gradient(135deg, rgba(74, 20, 32, 0.03) 0%, rgba(201, 162, 75, 0.06) 50%, rgba(232, 137, 29, 0.04) 100%);
+}
+
+.bg-hero-gradient {
+  background: linear-gradient(180deg, rgba(74, 20, 32, 0.7) 0%, rgba(31, 26, 23, 0.85) 100%);
+}
+
+/* Hairline Gold Dividers */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+  opacity: 0.6;
+}
+
+/* Micro-interaction & Buttons */
+.btn-saffron {
+  background-color: var(--saffron);
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-saffron:hover {
+  background-color: var(--saffron-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(232, 137, 29, 0.35);
+}
+.btn-saffron:active {
+  transform: translateY(0);
+}
+
+.btn-gold-outline {
+  border: 1px solid var(--gold);
+  color: var(--text-primary);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-gold-outline:hover {
+  background-color: rgba(201, 162, 75, 0.12);
+  border-color: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold-hairline);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* Accessibility Focus Ring */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

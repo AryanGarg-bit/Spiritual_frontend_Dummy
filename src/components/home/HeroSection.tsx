@@ -1,0 +1,147 @@
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Sparkles, ArrowRight, ShieldCheck, Star } from 'lucide-react';
+import { useQuiz } from '@/context/QuizContext';
+
+const heroSlides = [
+  {
+    image: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?q=80&w=1800&auto=format&fit=crop',
+    alt: 'Authentic Nepali Rudraksha and sacred energy stones on warm neutral silk background',
+    tag: 'Tears of Shiva • Nepal Harvest',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=1800&auto=format&fit=crop',
+    alt: 'Dense Tamil Nadu Karungali ebony wood bracelet with golden accents',
+    tag: 'Ancient Ebony • Tamil Nadu Forests',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1599707367072-cd6ada2bc375?q=80&w=1800&auto=format&fit=crop',
+    alt: 'Natural Golden Pyrite crystal mala and bracelet attracting wealth',
+    tag: 'Untreated Golden Pyrite • Wealth Sadhana',
+  },
+];
+
+export function HeroSection() {
+  const { openQuiz } = useQuiz();
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <section className="relative min-h-[85vh] lg:min-h-[88vh] flex items-center justify-center overflow-hidden bg-[#1F1418]">
+      {/* Background Images with slow graceful crossfade */}
+      {heroSlides.map((slide, index) => (
+        <div
+          key={slide.image}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            index === currentSlide ? 'opacity-40 scale-100' : 'opacity-0 scale-105 pointer-events-none'
+          }`}
+          style={{ transitionProperty: 'opacity, transform', transitionDuration: '1.2s' }}
+        >
+          <Image
+            src={slide.image}
+            alt={slide.alt}
+            fill
+            priority={index === 0}
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+        </div>
+      ))}
+
+      {/* Atmospheric Overlays for Luxury Jewellery Editorial feel */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#160F12] via-[#24131A]/60 to-[#160F12]/80" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-black/40 to-black/80" />
+
+      {/* Foreground Content */}
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white">
+        
+        {/* Subtle Sacred Eyebrow */}
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#C9A24B]/50 text-xs text-[#E0C075] mb-6 shadow-lg animate-in fade-in slide-in-from-bottom-3 duration-500">
+          <Sparkles className="w-3.5 h-3.5 text-[#E8891D]" />
+          <span className="font-serif-sacred tracking-wider font-semibold">
+            Rooted in Tradition • Made for Today
+          </span>
+          <span className="w-1 h-1 rounded-full bg-[#E8891D]" />
+          <span className="text-[11px] text-zinc-300">
+            {heroSlides[currentSlide].tag}
+          </span>
+        </div>
+
+        {/* Main Headline */}
+        <h1 className="font-serif-sacred text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[#FBF6EC] leading-[1.12] drop-shadow-sm">
+          Sacred Energies. <br />
+          <span className="italic font-normal text-[#E0C075]">Refined for Modern Life.</span>
+        </h1>
+
+        {/* Subheadline */}
+        <p className="mt-5 text-sm sm:text-base md:text-lg text-[#D9CEBF] max-w-2xl mx-auto font-normal leading-relaxed">
+          Authentic Nepali Rudraksha, Govt.-Certified Karungali Ebony, and High-Vibration Energy Stones — individually consecrated through Vedic Prana Pratishtha.
+        </p>
+
+        {/* Two Clear CTAs */}
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4">
+          <Link
+            href="/#bestsellers"
+            className="w-full sm:w-auto px-8 py-4 rounded-xl btn-saffron text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-xl hover:shadow-[#E8891D]/30 transition-all cursor-pointer"
+          >
+            <span>Shop Bestsellers</span>
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+
+          <button
+            onClick={() => openQuiz()}
+            className="w-full sm:w-auto px-7 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-[#FBF6EC] border border-[#C9A24B]/60 text-sm font-semibold tracking-wide backdrop-blur-md transition-all flex items-center justify-center gap-2 hover:border-[#E8891D] cursor-pointer"
+          >
+            <Sparkles className="w-4 h-4 text-[#E8891D]" />
+            <span>Find My Perfect Match</span>
+          </button>
+        </div>
+
+        {/* Micro Trust Indicators */}
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs text-[#D9CEBF]">
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="w-4 h-4 text-[#7C8B6A]" />
+            <span>NABL Lab Batch Tested</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[#E8891D]" />
+            <span>100% Water-Sink Karungali</span>
+          </div>
+          <div className="flex items-center gap-1.5 text-[#E0C075]">
+            <div className="flex">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-3.5 h-3.5 fill-current text-[#E8891D]" />
+              ))}
+            </div>
+            <span className="font-bold text-white ml-1">4.95 / 5.0</span>
+            <span className="text-zinc-400">(21,800+ Seekers)</span>
+          </div>
+        </div>
+
+      </div>
+
+      {/* Slide indicators at bottom */}
+      <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-20">
+        {heroSlides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrentSlide(i)}
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              i === currentSlide ? 'w-8 bg-[#E8891D]' : 'w-2 bg-white/30 hover:bg-white/60'
+            }`}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
+      </div>
+    </section>
+  );
+}
