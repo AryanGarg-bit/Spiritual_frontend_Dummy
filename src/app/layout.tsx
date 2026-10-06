@@ -90,6 +90,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-theme="light"
       className={`${cormorant.variable} ${jakarta.variable} ${devanagari.variable} h-full antialiased`}
       suppressHydrationWarning
     >
