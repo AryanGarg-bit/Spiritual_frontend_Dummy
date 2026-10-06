@@ -28,7 +28,7 @@ export const customerReviews: Review[] = [
     comment: 'Being from Tamil Nadu, our family knows Karungali very well. When the package arrived, the first thing I did was drop one bead into a bowl of fresh water. It sank straight to the bottom without a second’s hesitation — proving high wood density. The polish is natural, without any chemical paint or black ink. Beautifully made, sacred packaging.',
     verifiedBuyer: true,
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop',
-    productImage: 'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=400&auto=format&fit=crop',
+    productImage: 'https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=400&auto=format&fit=crop',
     material: 'Karungali',
   },
   {

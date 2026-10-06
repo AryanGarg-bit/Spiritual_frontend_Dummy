@@ -157,7 +157,7 @@ export function AuthenticitySection() {
           {/* Video Thumbnail (QR-to-Video Concept) (5 Columns) */}
           <div className="lg:col-span-5 rounded-3xl overflow-hidden border-2 border-[#C9A24B]/40 shadow-xl relative min-h-[300px] flex flex-col justify-end p-6 sm:p-8 bg-zinc-950 group">
             <Image
-              src="https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=800&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=800&auto=format&fit=crop"
               alt="Water sink test demonstration video thumbnail"
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"

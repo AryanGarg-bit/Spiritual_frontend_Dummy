@@ -19,7 +19,7 @@ export const collections: Collection[] = [
     sanskritName: 'करुंगाली रक्षक',
     tagline: 'Ancient ebony wood for electromagnetic grounding',
     description: 'Known for absorbing negative planetary energies and electromagnetic radiation. Handcrafted from mature black ebony wood harvested ethically in Tamil Nadu.',
-    image: 'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=1000&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=1000&auto=format&fit=crop',
     purpose: 'Protection',
     material: 'Karungali',
   },
@@ -111,7 +111,7 @@ export const products: Product[] = [
     bestseller: true,
     images: [
       'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?q=80&w=1000&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=1000&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=1000&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1599707367072-cd6ada2bc375?q=80&w=1000&auto=format&fit=crop',
     ],
     badges: ['Govt. Lab Tested', 'Authentic Nepali Origin', 'Prana Pratishtha Energized'],
@@ -177,7 +177,7 @@ export const products: Product[] = [
     inStock: true,
     bestseller: true,
     images: [
-      'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=1000&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=1000&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?q=80&w=1000&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1615655406736-b37c4fabf923?q=80&w=1000&auto=format&fit=crop',
     ],
@@ -477,7 +477,7 @@ export const products: Product[] = [
     bestseller: true,
     images: [
       'https://images.unsplash.com/photo-1615655406736-b37c4fabf923?q=80&w=1000&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=1000&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=1000&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?q=80&w=1000&auto=format&fit=crop',
     ],
     badges: ['Top Rated Shield', 'Dual Consecration', '100% Water Sink Verified'],
@@ -648,7 +648,7 @@ export const products: Product[] = [
     inStock: true,
     bestseller: false,
     images: [
-      'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=1000&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=1000&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1615655406736-b37c4fabf923?q=80&w=1000&auto=format&fit=crop',
     ],
     badges: ['108 Genuine Ebony Beads', 'Sinks in Water', 'Hand-Knotted'],
@@ -868,7 +868,7 @@ export const products: Product[] = [
     inStock: true,
     bestseller: false,
     images: [
-      'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=1000&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=1000&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?q=80&w=1000&auto=format&fit=crop',
     ],
     badges: ['Vedic Neem Heartwood', 'Purifying Touch', '925 Silver Capped'],
@@ -923,7 +923,7 @@ export const products: Product[] = [
     bestseller: false,
     images: [
       'https://images.unsplash.com/photo-1615655406736-b37c4fabf923?q=80&w=1000&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=1000&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=1000&auto=format&fit=crop',
     ],
     badges: ['Grade AAA Tourmaline', 'Heavy Negative Ionizer', 'Aura Repeller'],
     shortDescription: 'Natural 8mm Black Tourmaline crystals with faceted Black Obsidian focal stone.',
@@ -1030,7 +1030,7 @@ export const products: Product[] = [
     inStock: true,
     bestseller: false,
     images: [
-      'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=1000&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=1000&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1615655406736-b37c4fabf923?q=80&w=1000&auto=format&fit=crop',
     ],
     badges: ['Solid Ebony Heartwood', '925 Hallmarked Silver Caps', 'Regal Heritage'],
@@ -1355,7 +1355,7 @@ export const products: Product[] = [
     bestseller: false,
     images: [
       'https://images.unsplash.com/photo-1615655406736-b37c4fabf923?q=80&w=1000&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=1000&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=1000&auto=format&fit=crop',
     ],
     badges: ['Protection + Clarity + Abundance', 'Triple Siddhi Blessed', 'Executive Choice'],
     shortDescription: 'Handcrafted combination of dense Karungali ebony, 5-Mukhi Nepali Rudraksha, and shimmering Golden Pyrite.',
@@ -1408,7 +1408,7 @@ export const products: Product[] = [
     inStock: true,
     bestseller: false,
     images: [
-      'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=1000&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=1000&auto=format&fit=crop',
       'https://images.unsplash.com/photo-1615655406736-b37c4fabf923?q=80&w=1000&auto=format&fit=crop',
     ],
     badges: ['925 Hallmarked Silver', 'Solid Karungali Core', 'Bhairav Siddhi Energized'],

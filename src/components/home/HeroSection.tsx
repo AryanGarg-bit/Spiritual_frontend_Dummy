@@ -13,7 +13,7 @@ const heroSlides = [
     tag: 'Tears of Shiva • Nepal Harvest',
   },
   {
-    image: 'https://images.unsplash.com/photo-1611591475152-4d07ac53842c?q=80&w=1800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=1800&auto=format&fit=crop',
     alt: 'Dense Tamil Nadu Karungali ebony wood bracelet with golden accents',
     tag: 'Ancient Ebony • Tamil Nadu Forests',
   },
