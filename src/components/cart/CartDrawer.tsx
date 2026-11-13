@@ -63,7 +63,7 @@ export function CartDrawer() {
               <h2 className="font-serif-sacred text-xl font-bold text-[var(--text-primary)]">
                 Your Sacred Box
               </h2>
-              <span className="text-xs px-2 py-0.5 rounded-full bg-[var(--bg-surface-elevated)] border border-[var(--border-subtle)] font-medium text-[#C9A24B]">
+              <span className="text-xs px-2 py-0.5 rounded-full bg-[var(--bg-surface-elevated)] border border-[var(--border-subtle)] font-medium text-[#B87333]">
                 {items.length} {items.length === 1 ? 'item' : 'items'}
               </span>
             </div>
@@ -82,19 +82,19 @@ export function CartDrawer() {
               <span className="text-[var(--text-secondary)]">
                 {amountNeededForFreeShipping > 0 ? (
                   <>
-                    Add <strong className="text-[#E8891D]">₹{amountNeededForFreeShipping}</strong> more for <strong>FREE Express Shipping</strong>
+                    Add <strong className="text-[#C96818]">₹{amountNeededForFreeShipping}</strong> more for <strong>FREE Express Shipping</strong>
                   </>
                 ) : (
-                  <span className="text-[#7C8B6A] font-semibold flex items-center gap-1">
-                    <Check className="w-3.5 h-3.5" /> Congratulations! You unlocked Free Express Shipping!
+                  <span className="text-[#A44C18] font-bold flex items-center gap-1">
+                    <Check className="w-3.5 h-3.5" /> Auspicious! You unlocked Free Express Shipping!
                   </span>
                 )}
               </span>
-              <span className="text-[#C9A24B] font-bold">{progressPercent}%</span>
+              <span className="text-[#B87333] font-bold">{progressPercent}%</span>
             </div>
             <div className="w-full bg-[var(--border-subtle)] h-2 rounded-full overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-[#C9A24B] to-[#E8891D] transition-all duration-500 rounded-full"
+                className="h-full bg-gradient-to-r from-[#B87333] to-[#C96818] transition-all duration-500 rounded-full"
                 style={{ width: `${progressPercent}%` }}
               />
             </div>
@@ -104,14 +104,14 @@ export function CartDrawer() {
           <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-4">
             {items.length === 0 ? (
               <div className="py-16 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[var(--bg-surface-elevated)] border border-[#C9A24B]/30 flex items-center justify-center text-[#C9A24B]">
+                <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[var(--bg-surface-elevated)] border border-[#B87333]/30 flex items-center justify-center text-[#B87333]">
                   <Sparkles className="w-7 h-7" />
                 </div>
                 <h3 className="font-serif-sacred text-lg font-bold text-[var(--text-primary)]">
                   Your sacred box is empty
                 </h3>
                 <p className="text-xs text-[var(--text-muted)] mt-1 max-w-xs mx-auto">
-                  Bring divine harmony into your daily life with authentic Rudraksha and Karungali.
+                  Bring divine stillness into your daily life with authentic Nepali Rudraksha and Karungali.
                 </p>
                 <button
                   onClick={closeCart}
@@ -146,7 +146,7 @@ export function CartDrawer() {
                             </h4>
                             <button
                               onClick={() => removeItem(item.product.id, item.selectedSize)}
-                              className="text-[var(--text-muted)] hover:text-red-500 p-1"
+                              className="text-[var(--text-muted)] hover:text-red-600 p-1"
                               aria-label="Remove item"
                             >
                               <Trash2 className="w-3.5 h-3.5" />
@@ -179,7 +179,7 @@ export function CartDrawer() {
                           </div>
 
                           <div className="text-right">
-                            <span className="text-sm font-bold text-[#E8891D]">
+                            <span className="text-sm font-bold text-[#C96818]">
                               ₹{(item.product.price * item.quantity).toLocaleString('en-IN')}
                             </span>
                             {item.product.originalPrice > item.product.price && (
@@ -195,9 +195,9 @@ export function CartDrawer() {
                 </div>
 
                 {/* Combo Consecration Upsell Item */}
-                <div className="p-3.5 rounded-xl border border-[#C9A24B]/40 bg-gradient-to-r from-[#C9A24B]/10 to-[#E8891D]/5">
+                <div className="p-3.5 rounded-xl border border-[#B87333]/40 bg-gradient-to-r from-[#B87333]/10 to-[#C96818]/5">
                   <div className="flex gap-3 items-center">
-                    <div className="relative w-14 h-14 rounded-lg overflow-hidden shrink-0 border border-[#C9A24B]/30">
+                    <div className="relative w-14 h-14 rounded-lg overflow-hidden shrink-0 border border-[#B87333]/30">
                       <Image
                         src={upsellProduct.image}
                         alt={upsellProduct.name}
@@ -208,16 +208,16 @@ export function CartDrawer() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-1.5">
-                        <Sparkles className="w-3 h-3 text-[#E8891D]" />
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-[#C9A24B]">
-                          Sacred Add-on Deal
+                        <Sparkles className="w-3 h-3 text-[#C96818]" />
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-[#B87333]">
+                          Sacred Add-on Blessing
                         </span>
                       </div>
                       <h4 className="text-xs font-bold text-[var(--text-primary)] truncate mt-0.5">
                         {upsellProduct.name}
                       </h4>
                       <div className="flex items-center gap-2 mt-0.5">
-                        <span className="text-xs font-bold text-[#E8891D]">₹{upsellProduct.price}</span>
+                        <span className="text-xs font-bold text-[#C96818]">₹{upsellProduct.price}</span>
                         <span className="text-[10px] text-[var(--text-muted)] line-through">
                           ₹{upsellProduct.originalPrice}
                         </span>
@@ -227,8 +227,8 @@ export function CartDrawer() {
                       onClick={toggleUpsell}
                       className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                         hasUpsell
-                          ? 'bg-[#7C8B6A] text-white'
-                          : 'bg-[#C9A24B] text-[#1F1A17] hover:bg-[#E0C075]'
+                          ? 'bg-[#A44C18] text-white'
+                          : 'bg-[#B87333] text-white hover:bg-[#A36224]'
                       }`}
                     >
                       {hasUpsell ? 'Added ✓' : '+ Add'}
@@ -239,14 +239,14 @@ export function CartDrawer() {
                 {/* Coupon Code Section */}
                 <div className="pt-2">
                   {appliedCoupon ? (
-                    <div className="flex items-center justify-between p-2.5 rounded-lg bg-[#7C8B6A]/15 border border-[#7C8B6A]/30 text-xs">
-                      <div className="flex items-center gap-2 text-[#7C8B6A] font-semibold">
+                    <div className="flex items-center justify-between p-2.5 rounded-lg bg-[#A44C18]/10 border border-[#A44C18]/30 text-xs">
+                      <div className="flex items-center gap-2 text-[#A44C18] font-semibold">
                         <Tag className="w-3.5 h-3.5" />
-                        <span>Coupon &quot;{appliedCoupon}&quot; applied (-₹{discount})</span>
+                        <span>Code &quot;{appliedCoupon}&quot; applied (-₹{discount})</span>
                       </div>
                       <button
                         onClick={removeCoupon}
-                        className="text-xs text-red-500 hover:underline font-medium"
+                        className="text-xs text-[#A44C18] hover:underline font-medium"
                       >
                         Remove
                       </button>
@@ -258,13 +258,13 @@ export function CartDrawer() {
                           type="text"
                           value={couponInput}
                           onChange={(e) => setCouponInput(e.target.value)}
-                          placeholder="Coupon code (e.g. SHUBH10)"
-                          className="w-full text-xs uppercase px-3 py-2 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] placeholder:normal-case placeholder:text-[var(--text-muted)] focus:outline-none focus:border-[#C9A24B]"
+                          placeholder="Offer code (e.g. SHUBH10)"
+                          className="w-full text-xs uppercase px-3 py-2 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-subtle)] text-[var(--text-primary)] placeholder:normal-case placeholder:text-[var(--text-muted)] focus:outline-none focus:border-[#B87333]"
                         />
                       </div>
                       <button
                         type="submit"
-                        className="px-3 py-2 text-xs font-semibold rounded-lg bg-[var(--bg-surface-elevated)] border border-[var(--border-subtle)] hover:border-[#C9A24B] text-[var(--text-primary)] hover:text-[#E8891D] transition-colors"
+                        className="px-3 py-2 text-xs font-semibold rounded-lg bg-[var(--bg-surface-elevated)] border border-[var(--border-subtle)] hover:border-[#B87333] text-[var(--text-primary)] hover:text-[#C96818] transition-colors"
                       >
                         Apply
                       </button>
@@ -273,7 +273,7 @@ export function CartDrawer() {
                   {couponMessage && (
                     <p
                       className={`text-[11px] mt-1.5 ${
-                        couponMessage.isError ? 'text-red-500' : 'text-[#7C8B6A]'
+                        couponMessage.isError ? 'text-red-600' : 'text-[#A44C18] font-semibold'
                       }`}
                     >
                       {couponMessage.text}
@@ -295,8 +295,8 @@ export function CartDrawer() {
                   </span>
                 </div>
                 {discount > 0 && (
-                  <div className="flex justify-between text-[#7C8B6A]">
-                    <span>Sacred Discount</span>
+                  <div className="flex justify-between text-[#A44C18] font-semibold">
+                    <span>Sacred Blessing Concession</span>
                     <span>-₹{discount.toLocaleString('en-IN')}</span>
                   </div>
                 )}
@@ -304,7 +304,7 @@ export function CartDrawer() {
                   <span>Shipping</span>
                   <span>
                     {shipping === 0 ? (
-                      <span className="text-[#7C8B6A] font-semibold">FREE</span>
+                      <span className="text-[#A44C18] font-semibold">FREE</span>
                     ) : (
                       `₹${shipping}`
                     )}
@@ -312,7 +312,7 @@ export function CartDrawer() {
                 </div>
                 <div className="pt-2 border-t border-[var(--border-subtle)] flex justify-between text-base font-bold text-[var(--text-primary)]">
                   <span>Total Amount</span>
-                  <span className="text-[#E8891D]">₹{total.toLocaleString('en-IN')}</span>
+                  <span className="text-[#C96818]">₹{total.toLocaleString('en-IN')}</span>
                 </div>
               </div>
 
@@ -327,7 +327,7 @@ export function CartDrawer() {
 
               <div className="flex items-center justify-center gap-3 text-[11px] text-[var(--text-muted)] pt-1">
                 <span className="flex items-center gap-1">
-                  <ShieldCheck className="w-3.5 h-3.5 text-[#7C8B6A]" /> 100% Genuine Guaranteed
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#B87333]" /> 100% Genuine Guaranteed
                 </span>
                 <span>•</span>
                 <span>UPI / RuPay / Cards / COD</span>

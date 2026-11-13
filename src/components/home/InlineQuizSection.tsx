@@ -222,7 +222,7 @@ export function InlineQuizSection() {
                       onClick={() => handleAdd(product)}
                       className={`flex-1 py-1.5 px-2 rounded-lg text-[11px] font-bold transition-all flex items-center justify-center gap-1 cursor-pointer ${
                         quickAddedId === product.id
-                          ? 'bg-[#7C8B6A] text-white'
+                          ? 'bg-[#A44C18] text-white'
                           : 'btn-saffron'
                       }`}
                     >

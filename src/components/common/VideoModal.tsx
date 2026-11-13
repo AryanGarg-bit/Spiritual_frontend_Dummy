@@ -59,7 +59,7 @@ export function VideoModal({ isOpen, onClose }: VideoModalProps) {
                       <span className="block text-[8px] text-center text-[#E0C075] mt-1 font-bold">1.14</span>
                     </div>
                   </div>
-                  <span className="text-xs font-bold text-[#7C8B6A] mt-2 flex items-center gap-1">
+                  <span className="text-xs font-bold text-[#B87333] mt-2 flex items-center gap-1">
                     <CheckCircle2 className="w-3.5 h-3.5" /> Japam Karungali (Sinks)
                   </span>
                 </div>
@@ -100,7 +100,7 @@ export function VideoModal({ isOpen, onClose }: VideoModalProps) {
                 </button>
                 <span className="font-mono text-[11px]">00:18 / 00:45</span>
               </div>
-              <span className="inline-flex items-center gap-1 text-[11px] text-[#7C8B6A] font-semibold">
+              <span className="inline-flex items-center gap-1 text-[11px] text-[#B87333] font-semibold">
                 <ShieldCheck className="w-3.5 h-3.5" /> 100% Optical Density Verified
               </span>
             </div>

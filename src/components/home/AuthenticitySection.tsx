@@ -40,9 +40,9 @@ export function AuthenticitySection() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#7C8B6A]/15 text-[#7C8B6A] border border-[#7C8B6A]/30 text-xs font-semibold uppercase tracking-widest mb-3">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#B87333]/15 text-[#B87333] border border-[#B87333]/30 text-xs font-semibold uppercase tracking-widest mb-3">
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>Uncompromising Truth</span>
+            <span>Sacred Truth & Science</span>
           </div>
           <h2 className="font-serif-sacred text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--text-primary)]">
             How We Guarantee 100% Authenticity
@@ -82,9 +82,9 @@ export function AuthenticitySection() {
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-[var(--border-subtle)] flex items-center gap-1.5 text-[11px] text-[#7C8B6A] font-medium">
+                <div className="mt-6 pt-4 border-t border-[var(--border-subtle)] flex items-center gap-1.5 text-[11px] text-[#A44C18] font-medium">
                   <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
-                  <span>Standardized Quality Protocol</span>
+                  <span>Vedic Quality Protocol</span>
                 </div>
               </div>
             );
@@ -95,11 +95,11 @@ export function AuthenticitySection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
           {/* Sample Batch Test Report Card (7 Columns) */}
-          <div className="lg:col-span-7 p-6 sm:p-8 rounded-3xl bg-[var(--bg-surface)] border-2 border-[#C9A24B]/40 shadow-xl flex flex-col justify-between relative overflow-hidden">
+          <div className="lg:col-span-7 p-6 sm:p-8 rounded-3xl bg-[var(--bg-surface)] border-2 border-[#B87333]/40 shadow-xl flex flex-col justify-between relative overflow-hidden">
             <div className="relative z-10">
               <div className="flex items-center justify-between pb-4 border-b border-[var(--border-subtle)]">
                 <div className="flex items-center gap-2">
-                  <div className="p-2 rounded-lg bg-[#4A1420] text-[#E0C075]">
+                  <div className="p-2 rounded-lg bg-[#422216] text-[#D48E48]">
                     <FileText className="w-5 h-5" />
                   </div>
                   <div>
@@ -112,7 +112,7 @@ export function AuthenticitySection() {
                   </div>
                 </div>
 
-                <span className="px-2.5 py-1 rounded-full bg-[#7C8B6A]/15 text-[#7C8B6A] border border-[#7C8B6A]/30 text-xs font-bold">
+                <span className="px-2.5 py-1 rounded-full bg-[#A44C18]/15 text-[#A44C18] border border-[#A44C18]/30 text-xs font-bold">
                   PASSED 100% ✓
                 </span>
               </div>
@@ -125,11 +125,11 @@ export function AuthenticitySection() {
                 </div>
                 <div className="p-3 rounded-xl bg-[var(--bg-primary)] border border-[var(--border-subtle)]">
                   <span className="text-[10px] text-[var(--text-muted)] block uppercase font-semibold">Specific Gravity</span>
-                  <span className="text-xs font-bold text-[#E8891D]">1.14 g/cm³ (Sinks)</span>
+                  <span className="text-xs font-bold text-[#C96818]">1.14 g/cm³ (Sinks)</span>
                 </div>
                 <div className="p-3 rounded-xl bg-[var(--bg-primary)] border border-[var(--border-subtle)]">
                   <span className="text-[10px] text-[var(--text-muted)] block uppercase font-semibold">Chemical Dye</span>
-                  <span className="text-xs font-bold text-[#7C8B6A]">0.0% Detected</span>
+                  <span className="text-xs font-bold text-[#A44C18]">0.0% Detected</span>
                 </div>
               </div>
 

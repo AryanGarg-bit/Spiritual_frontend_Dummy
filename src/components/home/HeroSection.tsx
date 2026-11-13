@@ -109,7 +109,7 @@ export function HeroSection() {
         {/* Micro Trust Indicators */}
         <div className="mt-12 pt-8 border-t border-[var(--border-subtle)] flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs text-[var(--text-secondary)]">
           <div className="flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-[#7C8B6A]" />
+            <ShieldCheck className="w-4 h-4 text-[#B87333]" />
             <span className="font-medium">NABL Lab Batch Tested</span>
           </div>
           <div className="flex items-center gap-2">

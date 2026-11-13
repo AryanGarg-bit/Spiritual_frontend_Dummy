@@ -52,7 +52,7 @@ export function TrustStrip() {
         {/* Animated review count banner */}
         <div className="text-center pb-6 mb-6 border-b border-[var(--border-subtle)]">
           <p className="text-xs sm:text-sm font-medium text-[var(--text-secondary)] flex items-center justify-center gap-2 flex-wrap">
-            <span className="inline-flex items-center gap-1 text-[#7C8B6A] font-bold">
+            <span className="inline-flex items-center gap-1 text-[#B87333] font-bold">
               <CheckCircle2 className="w-4 h-4" /> Trusted Nationwide:
             </span>
             <span className="font-mono text-base sm:text-lg font-extrabold text-[#E8891D]">

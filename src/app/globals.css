@@ -1,57 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand Palette */
-  --maroon: #4A1420;
-  --maroon-dark: #320C14;
-  --maroon-light: #6A2131;
-  --saffron: #E8891D;
-  --saffron-hover: #D4770F;
-  --gold: #C9A24B;
-  --gold-light: #E0C075;
-  --gold-hairline: rgba(201, 162, 75, 0.35);
-  --ivory: #FBF6EC;
+  /* Natural Earthy Spiritual Palette (Rudraksha, Ebony, Terracotta, Copper & Sandalwood) */
+  --maroon: #422216;             /* Himalayan Rudraksha Bark Brown */
+  --maroon-dark: #2C160C;
+  --maroon-light: #5A3320;
+  --saffron: #C96818;            /* Natural Earthy Saffron Tilak */
+  --saffron-hover: #B5580E;
+  --gold: #B87333;               /* Sacred Temple Copper / Aged Brass */
+  --gold-light: #D48E48;
+  --gold-hairline: rgba(184, 115, 51, 0.3);
+  --ivory: #F7F2E8;              /* Natural Unbleached Cotton / Sandstone */
   --ivory-surface: #FFFFFF;
-  --ivory-muted: #F3EBDD;
-  --charcoal: #1F1A17;
-  --charcoal-muted: #554D47;
-  --sage: #7C8B6A;
-  --sage-light: #EBF0E6;
-  --sage-dark: #586548;
+  --ivory-muted: #EDE4D3;
+  --charcoal: #241D19;           /* Natural Soot / Earth Charcoal */
+  --charcoal-muted: #5C5047;
+  --copper-seal: #A44C18;        /* Terracotta Clay Authenticity Seal */
+  --copper-light: #F4E8DC;
 
-  /* Semantic Theme tokens (Light mode) */
-  --bg-primary: #FBF6EC;
+  /* Semantic Theme tokens (Light Earthy Natural Mode) */
+  --bg-primary: #F7F2E8;
   --bg-surface: #FFFFFF;
-  --bg-surface-elevated: #F6EFE2;
-  --bg-header: rgba(251, 246, 236, 0.92);
-  --text-primary: #1F1A17;
-  --text-secondary: #554D47;
-  --text-muted: #7A7067;
-  --border-subtle: #E8DECD;
-  --border-gold: #C9A24B;
-  --accent-cta: #E8891D;
+  --bg-surface-elevated: #EFE5D3;
+  --bg-header: rgba(247, 242, 232, 0.94);
+  --text-primary: #241D19;
+  --text-secondary: #5C5047;
+  --text-muted: #7E7065;
+  --border-subtle: #E2D6C2;
+  --border-gold: #B87333;
+  --accent-cta: #C96818;
   --accent-cta-text: #FFFFFF;
-  --card-shadow: 0 4px 20px -2px rgba(74, 20, 32, 0.06), 0 2px 6px -1px rgba(74, 20, 32, 0.04);
-  --card-shadow-hover: 0 12px 28px -4px rgba(74, 20, 32, 0.12), 0 4px 12px -2px rgba(74, 20, 32, 0.08);
+  --card-shadow: 0 4px 18px -2px rgba(66, 34, 22, 0.05), 0 2px 6px -1px rgba(66, 34, 22, 0.03);
+  --card-shadow-hover: 0 10px 24px -4px rgba(66, 34, 22, 0.1), 0 4px 10px -2px rgba(66, 34, 22, 0.06);
 }
 
 [data-theme="dark"],
 .dark {
-  /* Semantic Theme tokens (Dark mode - Deep sacred temple dusk) */
-  --bg-primary: #160F12;
-  --bg-surface: #22171B;
-  --bg-surface-elevated: #2C1E23;
-  --bg-header: rgba(22, 15, 18, 0.92);
-  --text-primary: #FBF6EC;
-  --text-secondary: #D9CEBF;
-  --text-muted: #A89C8E;
-  --border-subtle: #38252B;
-  --border-gold: #DFB864;
-  --accent-cta: #E8891D;
+  /* Semantic Theme tokens (Dark Mode: Deep Himalayan Night) */
+  --bg-primary: #181310;
+  --bg-surface: #221A15;
+  --bg-surface-elevated: #2C211B;
+  --bg-header: rgba(24, 19, 16, 0.94);
+  --text-primary: #F7F2E8;
+  --text-secondary: #D6C8B8;
+  --text-muted: #A39382;
+  --border-subtle: #3A2B23;
+  --border-gold: #C68B45;
+  --accent-cta: #C96818;
   --accent-cta-text: #FFFFFF;
-  --maroon: #852B3D;
+  --maroon: #633621;
+  --copper-seal: #C66A2C;
   --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
-  --card-shadow-hover: 0 12px 28px -4px rgba(201, 162, 75, 0.15);
+  --card-shadow-hover: 0 12px 28px -4px rgba(184, 115, 51, 0.15);
 }
 
 @layer base {
@@ -93,23 +93,19 @@
 }
 
 .bg-sacred-gradient {
-  background: linear-gradient(135deg, rgba(74, 20, 32, 0.03) 0%, rgba(201, 162, 75, 0.06) 50%, rgba(232, 137, 29, 0.04) 100%);
+  background: linear-gradient(135deg, rgba(66, 34, 22, 0.03) 0%, rgba(184, 115, 51, 0.05) 50%, rgba(201, 104, 24, 0.04) 100%);
 }
 
-.bg-hero-gradient {
-  background: linear-gradient(180deg, rgba(74, 20, 32, 0.7) 0%, rgba(31, 26, 23, 0.85) 100%);
-}
-
-/* Hairline Gold Dividers */
+/* Hairline Copper Dividers */
 .gold-divider {
   height: 1px;
   background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
-/* Micro-interaction & Buttons */
+/* Earthy Micro-interaction & Buttons */
 .btn-saffron {
-  background-color: var(--saffron);
+  background-color: var(--accent-cta);
   color: #FFFFFF;
   font-weight: 600;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -117,7 +113,7 @@
 .btn-saffron:hover {
   background-color: var(--saffron-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(232, 137, 29, 0.35);
+  box-shadow: 0 4px 14px rgba(201, 104, 24, 0.3);
 }
 .btn-saffron:active {
   transform: translateY(0);
@@ -129,7 +125,7 @@
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .btn-gold-outline:hover {
-  background-color: rgba(201, 162, 75, 0.12);
+  background-color: rgba(184, 115, 51, 0.1);
   border-color: var(--gold-light);
   transform: translateY(-1px);
 }

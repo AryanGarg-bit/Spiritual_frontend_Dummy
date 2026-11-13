@@ -29,7 +29,7 @@ export function ReviewsMasonry() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#7C8B6A]/15 text-[#7C8B6A] border border-[#7C8B6A]/30 text-xs font-semibold uppercase tracking-widest mb-3">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#B87333]/15 text-[#B87333] border border-[#B87333]/30 text-xs font-semibold uppercase tracking-widest mb-3">
             <CheckCircle2 className="w-3.5 h-3.5" />
             <span>21,800+ Verified Seekers</span>
           </div>
@@ -110,7 +110,7 @@ export function ReviewsMasonry() {
                 </div>
 
                 <div className="text-right">
-                  <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-[#7C8B6A] bg-[#7C8B6A]/10 px-2 py-0.5 rounded-full border border-[#7C8B6A]/20">
+                  <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-[#A44C18] bg-[#A44C18]/10 px-2 py-0.5 rounded-full border border-[#A44C18]/25">
                     <ShieldCheck className="w-3 h-3" /> Verified Buyer
                   </span>
                   <span className="block text-[9px] text-[var(--text-muted)] mt-1 truncate max-w-[120px]">

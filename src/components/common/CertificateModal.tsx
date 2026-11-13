@@ -27,7 +27,7 @@ export function CertificateModal({ isOpen, onClose, reportIndex = 0 }: Certifica
           role="dialog"
           aria-modal="true"
           aria-labelledby="cert-title"
-          className="relative bg-[var(--bg-surface)] w-full max-w-xl rounded-2xl shadow-2xl border-2 border-[#C9A24B]/60 p-6 sm:p-8 animate-in fade-in zoom-in-95 duration-200"
+          className="relative bg-[var(--bg-surface)] w-full max-w-xl rounded-2xl shadow-2xl border-2 border-[#B87333]/60 p-6 sm:p-8 animate-in fade-in zoom-in-95 duration-200"
         >
           {/* Close button */}
           <button
@@ -39,8 +39,8 @@ export function CertificateModal({ isOpen, onClose, reportIndex = 0 }: Certifica
           </button>
 
           {/* Certificate Header */}
-          <div className="text-center pb-5 border-b border-[#C9A24B]/30">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#7C8B6A]/15 text-[#7C8B6A] border border-[#7C8B6A]/30 text-xs font-semibold mb-2">
+          <div className="text-center pb-5 border-b border-[#B87333]/30">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#B87333]/15 text-[#B87333] border border-[#B87333]/30 text-xs font-semibold mb-2">
               <ShieldCheck className="w-4 h-4" /> NABL Accredited Laboratory Report
             </div>
             <h2 id="cert-title" className="font-serif-sacred text-2xl font-bold text-[var(--text-primary)]">
@@ -64,7 +64,7 @@ export function CertificateModal({ isOpen, onClose, reportIndex = 0 }: Certifica
               </div>
               <div className="col-span-2 pt-1 border-t border-[var(--border-subtle)]">
                 <span className="text-[var(--text-muted)] block text-[10px] uppercase font-semibold">Sample Description</span>
-                <span className="font-bold text-[#E8891D]">{report.productName}</span>
+                <span className="font-bold text-[#C96818]">{report.productName}</span>
               </div>
             </div>
 
@@ -82,17 +82,17 @@ export function CertificateModal({ isOpen, onClose, reportIndex = 0 }: Certifica
                   <tr>
                     <td className="p-2.5 text-[var(--text-secondary)] font-medium">Density Measurement</td>
                     <td className="p-2.5 text-[var(--text-primary)] font-mono">{report.density}</td>
-                    <td className="p-2.5 text-right text-[#7C8B6A] font-bold">PASS ✓</td>
+                    <td className="p-2.5 text-right text-[#A44C18] font-bold">PASS ✓</td>
                   </tr>
                   <tr>
                     <td className="p-2.5 text-[var(--text-secondary)] font-medium">Specific Gravity (Sink Test)</td>
                     <td className="p-2.5 text-[var(--text-primary)] font-mono">{report.specificGravity}</td>
-                    <td className="p-2.5 text-right text-[#7C8B6A] font-bold">PASS ✓</td>
+                    <td className="p-2.5 text-right text-[#A44C18] font-bold">PASS ✓</td>
                   </tr>
                   <tr>
                     <td className="p-2.5 text-[var(--text-secondary)] font-medium">Microscopic Seed Integrity</td>
                     <td className="p-2.5 text-[var(--text-primary)]">{report.fissureIntegrity}</td>
-                    <td className="p-2.5 text-right text-[#7C8B6A] font-bold">PASS ✓</td>
+                    <td className="p-2.5 text-right text-[#A44C18] font-bold">PASS ✓</td>
                   </tr>
                   <tr>
                     <td className="p-2.5 text-[var(--text-secondary)] font-medium">Methodology</td>
@@ -105,13 +105,13 @@ export function CertificateModal({ isOpen, onClose, reportIndex = 0 }: Certifica
             </div>
 
             {/* Verification Footer with QR Code */}
-            <div className="flex items-center justify-between p-3.5 rounded-xl bg-gradient-to-r from-[#4A1420]/10 to-[#C9A24B]/10 border border-[#C9A24B]/40">
+            <div className="flex items-center justify-between p-3.5 rounded-xl bg-gradient-to-r from-[#422216]/10 to-[#B87333]/10 border border-[#B87333]/40">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-white p-1 rounded-lg border border-[var(--border-subtle)] flex items-center justify-center">
-                  <QrCode className="w-10 h-10 text-[#1F1A17]" />
+                  <QrCode className="w-10 h-10 text-[#241D19]" />
                 </div>
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-[#C9A24B] block">Digital Ledger QR</span>
+                  <span className="text-[10px] uppercase font-bold text-[#B87333] block">Digital Ledger QR</span>
                   <p className="text-[11px] font-semibold text-[var(--text-primary)]">
                     Tamper-proof verifiable record
                   </p>
@@ -119,7 +119,7 @@ export function CertificateModal({ isOpen, onClose, reportIndex = 0 }: Certifica
                 </div>
               </div>
               <div className="text-right">
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#7C8B6A] text-white text-[10px] font-bold">
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#A44C18] text-white text-[10px] font-bold">
                   <CheckCircle2 className="w-3 h-3" /> VERIFIED GENUINE
                 </span>
               </div>
@@ -136,7 +136,7 @@ export function CertificateModal({ isOpen, onClose, reportIndex = 0 }: Certifica
             </button>
             <button
               onClick={() => alert(`Certificate ${report.reportNumber} download simulated.`)}
-              className="py-2.5 px-4 rounded-xl border border-[var(--border-subtle)] hover:border-[#C9A24B] text-xs font-semibold text-[var(--text-primary)] flex items-center gap-1.5 transition-colors"
+              className="py-2.5 px-4 rounded-xl border border-[var(--border-subtle)] hover:border-[#B87333] text-xs font-semibold text-[var(--text-primary)] flex items-center gap-1.5 transition-colors"
             >
               <Download className="w-3.5 h-3.5" />
               <span>Download PDF</span>

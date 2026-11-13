@@ -154,7 +154,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
             onClick={handleQuickAdd}
             className={`w-full py-2.5 px-3 rounded-xl text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all shadow-xs cursor-pointer ${
               isAdded
-                ? 'bg-[#7C8B6A] text-white'
+                ? 'bg-[#A44C18] text-white'
                 : 'btn-saffron'
             }`}
           >
